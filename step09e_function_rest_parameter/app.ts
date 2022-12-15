@@ -1,19 +1,19 @@
-function buildName(firstName: string, ...restOfName: string[]) {//Named function with Rest parameters
-	return firstName + " " + restOfName.join(" ");
+function buildName(firstName: string, ...restOfName: string[]) {
+  //Named function with Rest parameters
+  return firstName + " " + restOfName.join(" ");
 }
 
 var employeeName = buildName("Joseph", "Samuel", "Lucas", "MacKinzie");
 
-
-
+console.log("sajid", "sdf", "bb", "hh", "ee");
 
 //anonymous function type with Rest parameters
-var buildNameFun: (fname: string, ...rest: string[])=>string =
-function (firstName: string, ...restOfName: string[]) {
-	return firstName + " " + restOfName.join(" ");
-}
+var buildNameFun: (fname: string, ...rest: string[]) => string = function (
+  firstName: string,
+  ...restOfName: string[]
+) {
+  return firstName + " " + restOfName.join(" ");
+};
 
 //Note: Rest, optional and default parameters can only
 // be at the end of the parameter list
-											
-						
