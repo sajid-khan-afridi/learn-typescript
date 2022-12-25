@@ -27,7 +27,7 @@ console.log(myAge.toLowerCase()); //Can be called on string
 
 let newAge = Math.random() > 0.6 ? "Khan" : 60;
 
-//newAge.toLowerCase();//Error: Transpiler cannot narrow
+// newAge.toLowerCase();//Error: Transpiler cannot narrow
 
 if (newAge === "Khan") {
   // Type of newAge: string
