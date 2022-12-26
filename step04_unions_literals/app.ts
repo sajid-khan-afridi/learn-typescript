@@ -29,9 +29,11 @@ let newAge = Math.random() > 0.6 ? "Khan" : 60;
 
 // newAge.toLowerCase();//Error: Transpiler cannot narrow
 
-if (newAge === "Khan") {
+if (typeof newAge === "string") {
   // Type of newAge: string
   newAge.toUpperCase(); // Can be called
+} else {
+  newAge.toFixed(2);
 }
 
 if (typeof newAge === "string") {
